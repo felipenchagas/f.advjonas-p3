@@ -1,0 +1,912 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Escritório de Advocacia em Curitiba | Jonas Stephâni</title>
+<meta name="description" content="Conheça o escritório de advocacia Jonas Stephâni: método de trabalho, valores, estrutura e áreas atendidas. Atendimento em Curitiba e Região Metropolitana."/>
+<link rel="canonical" href="https://advjonasstephani.com.br/escritorio-advocacia"/>
+<link rel="stylesheet" href="css/style.css"/>
+
+<!-- ===== Tema claro escopado (não conflita com o site) ===== -->
+<style>
+  .office-page, .office-page * { box-sizing: border-box; }
+  .office-page {
+    --bg: #f7fbff;
+    --surface: #ffffff;
+    --muted: #55657a;
+    --text: #0b2033;
+    --accent: #0aa2c0;
+    --accent-2: #14b87a;
+    --border: #e2edf8;
+    --shadow: 0 12px 30px rgba(8,29,54,.06);
+    --radius: 18px;
+    background:
+      radial-gradient(1200px 400px at -10% -20%, rgba(33,200,246,.18), transparent 60%),
+      radial-gradient(1000px 400px at 110% 10%, rgba(110,231,183,.16), transparent 60%),
+      linear-gradient(180deg, var(--bg) 0%, #eef5fc 100%);
+    color: var(--text);
+    font: 15px/1.55 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  }
+  .office-wrap { max-width: 1120px; margin: 0 auto; padding: 48px 20px; }
+  .chip { display:inline-block; font-weight:800; color:#fff; background: linear-gradient(90deg, #B8860B, #2C3E50); /* Dourado para Azul Escuro */
+  color: #FFFFFF; /* Texto branco puro para alto contraste */
+  /* Ou, se quiser um dourado mais claro para o texto: */
+  /* color: #FFD700; */ /* Dourado mais claro */
+  padding: 10px 20px; /* Ajuste o padding conforme necessário */
+  border-radius: 8px; /* Borda arredondada como no exemplo */
+  font-family: sans-serif; /* Use a fonte que desejar */
+  font-weight: bold; /* Para o texto se destacar */
+  text-decoration: none; /* Se for um link */
+  display: inline-block; /* Para o padding funcionar corretamente em links */;
+          padding:8px 12px; border-radius:999px; box-shadow: var(--shadow); }
+  .lead { color: var(--muted); max-width: 75ch; }
+  .pill { display:inline-block; background: var(--surface); border:1px solid var(--border); padding:8px 12px;
+          border-radius:999px; margin:6px 8px 0 0; font-weight:700; color:#0c5f78; box-shadow:var(--shadow); }
+
+  /* grid sections */
+  .grid-2 { display:grid; grid-template-columns: 1.2fr 1fr; gap: 28px; align-items:center; }
+  .grid-3 { display:grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
+  .card { background: var(--surface); border:1px solid var(--border); border-radius: var(--radius); padding: 16px;
+          box-shadow: var(--shadow); }
+  .card h3 { margin:.2rem 0 .2rem; }
+  .hero-img { width:100%; height:auto; border-radius:16px; border:1px solid var(--border); box-shadow: var(--shadow); }
+  .tiny { font-size:.9rem; color: var(--muted); }
+
+  /* Timeline */
+  .timeline { display:grid; grid-template-columns: repeat(5,minmax(160px,1fr)); gap: 14px; }
+  .step { position:relative; background: var(--surface); border:1px solid var(--border); border-radius: 16px;
+          padding:12px 12px 12px 42px; box-shadow: var(--shadow); }
+  .step:before { content: attr(data-step); position:absolute; left:10px; top:10px; width:24px; height:24px; line-height:24px;
+                 text-align:center; border-radius:999px; background:#0aa2c0; color:#fff; font-weight:800; }
+
+  /* Listas ligadas a páginas */
+  .link-list { list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(2,1fr); gap:10px; }
+  .link-list a { text-decoration:none; font-weight:800; color:#0a5972; background: var(--surface);
+                 border:1px solid var(--border); border-radius:12px; padding:10px 12px; display:block; box-shadow:var(--shadow); }
+  .link-list a:hover { text-decoration:underline; }
+
+  /* KPIs */
+  .kpis { display:grid; grid-template-columns: repeat(4,1fr); gap:14px; }
+  .kpi  { text-align:center; background: var(--surface); border:1px solid var(--border); border-radius: 14px; padding:14px; box-shadow: var(--shadow); }
+  .kpi b { font-size:1.6rem; display:block; }
+
+  /* CTA */
+  .cta { display:flex; align-items:center; justify-content:space-between; gap:16px;
+         background: linear-gradient(90deg, rgba(33,200,246,.12), rgba(110,231,183,.12));
+         border:1px solid #bfeff9; border-radius: 18px; padding: 18px; }
+  .btn { text-decoration:none; font-weight:900; border-radius: 14px; padding: 12px 16px; color:#fff;
+           background: linear-gradient(90deg, #B8860B, #2C3E50); /* Dourado para Azul Escuro */
+  color: #FFFFFF; /* Texto branco puro para alto contraste */
+  /* Ou, se quiser um dourado mais claro para o texto: */
+  /* color: #FFD700; */ /* Dourado mais claro */
+  padding: 10px 20px; /* Ajuste o padding conforme necessário */
+  border-radius: 8px; /* Borda arredondada como no exemplo */
+  font-family: sans-serif; /* Use a fonte que desejar */
+  font-weight: bold; /* Para o texto se destacar */
+  text-decoration: none; /* Se for um link */
+  display: inline-block; /* Para o padding funcionar corretamente em links */ }
+
+  /* Responsivo */
+  @media (max-width: 960px){
+    .grid-2 { grid-template-columns: 1fr; }
+    .timeline { grid-template-columns: 1fr 1fr; }
+    .grid-3 { grid-template-columns: 1fr; }
+    .kpis { grid-template-columns: 1fr 1fr; }
+    .link-list { grid-template-columns: 1fr; }
+  }
+</style>
+
+<!-- ===== Schema ===== -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebPage",
+  "name":"Escritório de Advocacia em Curitiba",
+  "url":"https://advjonasstephani.com.br/escritorio-advocacia",
+  "inLanguage":"pt-BR",
+  "description":"Escritório de advocacia em Curitiba com foco em piso salarial profissional, direito trabalhista, criminal, médico e consultoria preventiva.",
+  "speakable":{"@type":"SpeakableSpecification","xpath":["//h1","//section[@id='metodo']/h2","//section[@id='areas']/h2"]},
+  "potentialAction":{"@type":"SearchAction","target":"https://advjonasstephani.com.br/busca?q={q}","query-input":"required name=q"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LegalService",
+  "name":"Jonas Stephâni Advocacia",
+  "url":"https://advjonasstephani.com.br/",
+  "image":"https://advjonasstephani.com.br/imagens/logo.png",
+  "logo":"https://advjonasstephani.com.br/imagens/logo.png",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"R. Manoel Bandeira, 157 - Vargem Grande",
+    "addressLocality":"Pinhais",
+    "addressRegion":"PR",
+    "addressCountry":"BR",
+    "postalCode":"83323-100"
+  },
+  "areaServed": ["Curitiba","Colombo","São José dos Pinhais","Pinhais","Araucária","Campo Largo"],
+  "telephone":"+55-41-99276-0819",
+  "sameAs":["https://www.instagram.com/","https://www.linkedin.com/"],
+  "priceRange":"$$"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Início","item":"https://advjonasstephani.com.br/"},
+    {"@type":"ListItem","position":2,"name":"Escritório de Advocacia","item":"https://advjonasstephani.com.br/escritorio-advocacia"}
+  ]
+}
+</script>
+
+<meta property="og:title" content="Escritório de Advocacia em Curitiba | Jonas Stephâni"/>
+<meta property="og:description" content="Método de trabalho, valores e estrutura. Atendimento em Curitiba e Região Metropolitana."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://advjonasstephani.com.br/escritorio-advocacia"/>
+<meta property="og:image" content="https://advjonasstephani.com.br/imagens/profissao/contratos.jpg"/>
+</head>
+<body class="wp-singular envato_tk_templates-template envato_tk_templates-template-elementor_header_footer single single-envato_tk_templates postid-37 wp-embed-responsive wp-theme-hello-elementor ehf-header ehf-footer ehf-template-hello-elementor ehf-stylesheet-hello-elementor theme-default elementor-default elementor-template-full-width elementor-kit-6 elementor-page elementor-page-37">
+
+<header id="masthead" itemscope="itemscope" itemtype="https://schema.org/WPHeader" style="background-color:#282e3f;">
+   <p class="main-title bhf-hidden" itemprop="headline"><a href="https://advjonasstephani.com.br/" rel="home" title="Barristar">Advogado Jonas Stephâni</a></p>
+   <div class="elementor elementor-1247" data-elementor-id="1247" data-elementor-type="wp-post">
+      <div class="elementor-element elementor-element-beab667 e-flex e-con-boxed e-con e-child" data-element_type="container" data-id="beab667" data-settings='{"background_background":"classic"}'>
+         <div class="e-con-inner">
+            <div class="elementor-element elementor-element-8e9ae3f e-con-full e-flex e-con e-child" data-element_type="container" data-id="8e9ae3f">
+               <div class="elementor-element elementor-element-201d842 elementor-icon-list--layout-inline elementor-mobile-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="201d842" data-widget_type="icon-list.default">
+                  <div class="elementor-widget-container">
+                     <ul class="elementor-icon-list-items elementor-inline-items">
+                        <li class="elementor-icon-list-item elementor-inline-item">
+                           <span class="elementor-icon-list-icon">
+                           <i aria-hidden="true" style="color:#C0B596;" class="icon icon-map-marker"></i> </span>
+                           <span style="color:#ffffff;" class="elementor-icon-list-text">Rua Manoel Bandeira, 157 - Vargem Grande - Pinhais</span>
+                        </li>
+                        <li class="elementor-icon-list-item elementor-inline-item">
+                           <a href="tel:+5541992760819">
+                           <span class="elementor-icon-list-icon">
+                           <i aria-hidden="true" class="icon icon-smartphone" style="color:#C0B596;"></i> </span>
+                           <span class="elementor-icon-list-text" style="color:#ffffff;">(41) 99276-0819</span>
+                           </a>
+                        </li>
+                        <li class="elementor-icon-list-item elementor-inline-item">
+                           <span class="elementor-icon-list-icon">
+                           <i aria-hidden="true" class="icon icon-clock2" style="color:#C0B596;"></i> </span>
+                           <span class="elementor-icon-list-text" style="color:#ffffff;">08:00 - 18:00</span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="elementor-element elementor-element-77910fb e-con-full e-flex e-con e-child" data-element_type="container" data-id="77910fb">
+               <div class="elementor-element elementor-element-ec3ef57 elementor-align-right elementor-mobile-align-center elementor-widget elementor-widget-button" data-element_type="widget" data-id="ec3ef57" data-widget_type="button.default">
+                  <div class="elementor-widget-container">
+                     <div class="elementor-button-wrapper">
+                        <a class="elementor-button elementor-button-link elementor-size-sm"  style="color:#C0B596;" href="https://advjonasstephani.com.br/">
+                        <span class="elementor-button-content-wrapper" >
+                        <span class="elementor-button-text" style="color:#ffffff;">Agendamento</span>
+                        </span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="elementor-element elementor-element-09a7af8 e-flex e-con-boxed e-con e-parent" data-element_type="container" data-id="09a7af8" data-settings='{"background_background":"classic"}'>
+         <div class="e-con-inner">
+            <div class="elementor-element elementor-element-be69750 e-con-full e-flex e-con e-child" data-element_type="container" data-id="be69750">
+               <div class="elementor-element elementor-element-2118260 e-con-full e-flex e-con e-child" data-element_type="container" data-id="2118260">
+                  <div class="elementor-element elementor-element-d43e217 e-con-full e-flex e-con e-child" data-element_type="container" data-id="d43e217">
+                     <div class="elementor-element elementor-element-517e6f4 elementor-widget elementor-widget-image" data-element_type="widget" data-id="517e6f4" data-widget_type="image.default">
+                        <div class="elementor-widget-container">
+                           <a href="https://advjonasstephani.com.br/">
+                           <img alt="Advogado em Curitiba - Jonas Stephani" class="attachment-full size-full wp-image-109" height="60" src="https://advjonasstephani.com.br/imagens/logo.png" alt="Jonas Stephâni Advocacia em Curitiba" title="Jonas Stephâni Advocacia em Curitiba" width="250"/> </a>
+                        </div>
+                     </div>
+                  </div>
+<div class="elementor-element elementor-element-5376eda e-con-full e-flex e-con e-child" data-element_type="container" data-id="5376eda">
+    <div class="elementor-element elementor-element-7759d0e elementor-widget elementor-widget-ekit-nav-menu" data-element_type="widget" data-id="7759d0e" data-widget_type="ekit-nav-menu.default">
+        <div class="elementor-widget-container">
+<nav class="ekit-wid-con ekit_menu_responsive_tablet" data-hamburger-icon="" data-hamburger-icon-type="icon" data-responsive-breakpoint="1024">
+                <button aria-label="hamburger-icon" class="elementskit-menu-hamburger elementskit-menu-toggler" type="button">
+                    <span class="elementskit-menu-hamburger-icon"></span>
+                    <span class="elementskit-menu-hamburger-icon"></span>
+                    <span class="elementskit-menu-hamburger-icon"></span>
+                </button>
+                <div class="elementskit-menu-container elementskit-menu-offcanvas-elements elementskit-navbar-nav-default ekit-nav-menu-one-page-no ekit-nav-dropdown-hover" id="ekit-megamenu-barristar-menu">
+  <ul class="elementskit-navbar-nav elementskit-menu-po-center submenu-click-on-icon" id="menu-barristar-menu">
+    <!-- Início (inalterado) -->
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-17">
+      <a class="ekit-menu-nav-link" href="https://advjonasstephani.com.br">Início</a>
+    </li>
+
+    <!-- Áreas de Atuação (base igual + inserções) -->
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2328 nav-item elementskit-dropdown-has relative_position elementskit-dropdown-menu-default_width elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-2328">
+      <a class="ekit-menu-nav-link ekit-menu-dropdown-toggle" href="https://advjonasstephani.com.br/areas-de-atuacao">Atuação<i aria-hidden="true" class="icon icon-down-arrow1 elementskit-submenu-indicator"></i></a>
+      <ul class="elementskit-dropdown elementskit-submenu-panel">
+
+<!-- Piso Salarial Profissional (com sub e sub-sub) -->
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children nav-item elementskit-dropdown-has elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-30">
+  <a class="dropdown-item ekit-menu-dropdown-toggle" href="https://advjonasstephani.com.br/piso-salarial">
+    Piso Salarial
+    <i aria-hidden="true" class="icon icon-right-arrow elementskit-submenu-indicator"></i>
+  </a>
+
+  <ul class="elementskit-dropdown elementskit-submenu-panel elementskit-submenu-right">
+
+    <!-- Engenheiros -->
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children nav-item elementskit-dropdown-has elementskit-mobile-builder-content" data-vertical-menu="750px">
+      <a class="dropdown-item ekit-menu-dropdown-toggle" href="https://advjonasstephani.com.br/engenheiros">
+        Engenheiros
+        <i aria-hidden="true" class="icon icon-right-arrow elementskit-submenu-indicator"></i>
+      </a>
+      <ul class="elementskit-dropdown elementskit-submenu-panel elementskit-submenu-right">
+        <!-- NOVO agrupador -->
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children nav-item elementskit-dropdown-has elementskit-mobile-builder-content" data-vertical-menu="750px">
+          <a class="dropdown-item ekit-menu-dropdown-toggle" href="https://advjonasstephani.com.br/engenheiros/salarios">
+            Salários
+            <i aria-hidden="true" class="icon icon-right-arrow elementskit-submenu-indicator"></i>
+          </a>
+          <ul class="elementskit-dropdown elementskit-submenu-panel elementskit-submenu-right">
+            <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/engenheiros/piso-salarial">Piso salarial</a></li>
+            <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/engenheiros/salario-minimo">Salário mínimo</a></li>
+            <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/engenheiros/salario-medio">Salário médio</a></li>
+            <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/engenheiros/salario-base">Salário base</a></li>
+          </ul>
+        </li>
+        <!-- demais itens -->
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/engenheiros/direitos-trabalhistas">Direitos trabalhistas</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/engenheiros/diferenca-salarial">Diferença salarial</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/engenheiros/reajuste-salarial">Reajuste salarial</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/engenheiros/revisao-salarial">Revisão salarial</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/engenheiros/equiparacao-salarial">Equiparação salarial</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/engenheiros/lei-4950a">Lei 4950-A</a></li>
+      </ul>
+    </li>
+
+    <!-- Arquitetos -->
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children nav-item elementskit-dropdown-has elementskit-mobile-builder-content" data-vertical-menu="750px">
+      <a class="dropdown-item ekit-menu-dropdown-toggle" href="https://advjonasstephani.com.br/arquitetos">
+        Arquitetos
+        <i aria-hidden="true" class="icon icon-right-arrow elementskit-submenu-indicator"></i>
+      </a>
+      <ul class="elementskit-dropdown elementskit-submenu-panel elementskit-submenu-right">
+        <!-- NOVO agrupador -->
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children nav-item elementskit-dropdown-has elementskit-mobile-builder-content" data-vertical-menu="750px">
+          <a class="dropdown-item ekit-menu-dropdown-toggle" href="https://advjonasstephani.com.br/arquitetos/salarios">
+            Salários
+            <i aria-hidden="true" class="icon icon-right-arrow elementskit-submenu-indicator"></i>
+          </a>
+          <ul class="elementskit-dropdown elementskit-submenu-panel elementskit-submenu-right">
+            <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/arquitetos/piso-salarial">Piso salarial</a></li>
+            <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/arquitetos/salario-minimo">Salário mínimo</a></li>
+            <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/arquitetos/salario-medio">Salário médio</a></li>
+            <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/arquitetos/salario-base">Salário base</a></li>
+          </ul>
+        </li>
+        <!-- demais itens -->
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/arquitetos/direitos-trabalhistas">Direitos trabalhistas</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/arquitetos/diferenca-salarial">Diferença salarial</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/arquitetos/reajuste-salarial">Reajuste salarial</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/arquitetos/revisao-salarial">Revisão salarial</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/arquitetos/equiparacao-salarial">Equiparação salarial</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/arquitetos/lei-4950a">Lei 4950-A Arquiteto</a></li>
+      </ul>
+    </li>
+
+    <!-- Médicos Veterinários -->
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children nav-item elementskit-dropdown-has elementskit-mobile-builder-content" data-vertical-menu="750px">
+      <a class="dropdown-item ekit-menu-dropdown-toggle" href="https://advjonasstephani.com.br/veterinarios">
+        Veterinários
+        <i aria-hidden="true" class="icon icon-right-arrow elementskit-submenu-indicator"></i>
+      </a>
+      <ul class="elementskit-dropdown elementskit-submenu-panel elementskit-submenu-right">
+        <!-- NOVO agrupador -->
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children nav-item elementskit-dropdown-has elementskit-mobile-builder-content" data-vertical-menu="750px">
+          <a class="dropdown-item ekit-menu-dropdown-toggle" href="https://advjonasstephani.com.br/veterinarios/salarios">
+            Salários
+            <i aria-hidden="true" class="icon icon-right-arrow elementskit-submenu-indicator"></i>
+          </a>
+          <ul class="elementskit-dropdown elementskit-submenu-panel elementskit-submenu-right">
+            <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/veterinarios/piso-salarial">Piso salarial</a></li>
+            <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/veterinarios/salario-minimo">Salário mínimo</a></li>
+            <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/veterinarios/salario-medio">Salário médio</a></li>
+            <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/veterinarios/salario-base">Salário base</a></li>
+          </ul>
+        </li>
+        <!-- demais itens -->
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/veterinarios/direitos-trabalhistas">Direitos trabalhistas</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/veterinarios/diferenca-salarial">Diferença salarial</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/veterinarios/reajuste-salarial">Reajuste salarial</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/veterinarios/revisao-salarial">Revisão salarial</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/veterinarios/equiparacao-salarial">Equiparação salarial</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/veterinarios/lei-4950a">Lei 4950-A Médico Veterinário</a></li>
+      </ul>
+    </li>
+
+    <!-- Agrônomos -->
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children nav-item elementskit-dropdown-has elementskit-mobile-builder-content" data-vertical-menu="750px">
+      <a class="dropdown-item ekit-menu-dropdown-toggle" href="https://advjonasstephani.com.br/agronomos">
+        Agrônomos
+        <i aria-hidden="true" class="icon icon-right-arrow elementskit-submenu-indicator"></i>
+      </a>
+      <ul class="elementskit-dropdown elementskit-submenu-panel elementskit-submenu-right">
+        <!-- NOVO agrupador -->
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children nav-item elementskit-dropdown-has elementskit-mobile-builder-content" data-vertical-menu="750px">
+          <a class="dropdown-item ekit-menu-dropdown-toggle" href="https://advjonasstephani.com.br/agronomos/salarios">
+            Salários
+            <i aria-hidden="true" class="icon icon-right-arrow elementskit-submenu-indicator"></i>
+          </a>
+          <ul class="elementskit-dropdown elementskit-submenu-panel elementskit-submenu-right">
+            <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/agronomos/piso-salarial">Piso salarial</a></li>
+            <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/agronomos/salario-minimo">Salário mínimo</a></li>
+            <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/agronomos/salario-medio">Salário médio</a></li>
+            <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/agronomos/salario-base">Salário base</a></li>
+          </ul>
+        </li>
+        <!-- demais itens -->
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/agronomos/direitos-trabalhistas">Direitos trabalhistas</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/agronomos/diferenca-salarial">Diferença salarial</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/agronomos/reajuste-salarial">Reajuste salarial</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/agronomos/revisao-salarial">Revisão salarial</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/agronomos/equiparacao-salarial">Equiparação salarial</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/agronomos/lei-4950a">Lei 4950-A</a></li>
+      </ul>
+    </li>
+
+    <!-- Químicos -->
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children nav-item elementskit-dropdown-has elementskit-mobile-builder-content" data-vertical-menu="750px">
+      <a class="dropdown-item ekit-menu-dropdown-toggle" href="https://advjonasstephani.com.br/quimicos">
+        Químicos
+        <i aria-hidden="true" class="icon icon-right-arrow elementskit-submenu-indicator"></i>
+      </a>
+      <ul class="elementskit-dropdown elementskit-submenu-panel elementskit-submenu-right">
+        <!-- NOVO agrupador -->
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children nav-item elementskit-dropdown-has elementskit-mobile-builder-content" data-vertical-menu="750px">
+          <a class="dropdown-item ekit-menu-dropdown-toggle" href="https://advjonasstephani.com.br/quimicos/salarios">
+            Salários
+            <i aria-hidden="true" class="icon icon-right-arrow elementskit-submenu-indicator"></i>
+          </a>
+          <ul class="elementskit-dropdown elementskit-submenu-panel elementskit-submenu-right">
+            <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/quimicos/piso-salarial">Piso salarial</a></li>
+            <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/quimicos/salario-minimo">Salário mínimo</a></li>
+            <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/quimicos/salario-medio">Salário médio</a></li>
+            <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/quimicos/salario-base">Salário base</a></li>
+          </ul>
+        </li>
+        <!-- demais itens -->
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/quimicos/direitos-trabalhistas">Direitos trabalhistas</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/quimicos/diferenca-salarial">Diferença salarial</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/quimicos/reajuste-salarial">Reajuste salarial</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/quimicos/revisao-salarial">Revisão salarial</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/quimicos/equiparacao-salarial">Equiparação salarial</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content"><a class="dropdown-item" href="https://advjonasstephani.com.br/quimicos/lei-4950a">Lei 4950-A</a></li>
+      </ul>
+    </li>
+
+  </ul>
+</li>
+
+
+        <!-- Direito Trabalhista (inalterado + submenu Problemas Comuns) -->
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2762 nav-item elementskit-dropdown-has elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-2762">
+          <a class="dropdown-item ekit-menu-dropdown-toggle" href="https://advjonasstephani.com.br/direito-trabalhista">Direito Trabalhista<i aria-hidden="true" class="icon icon-right-arrow elementskit-submenu-indicator"></i></a>
+          <ul class="elementskit-dropdown elementskit-submenu-panel elementskit-submenu-right">
+		  
+
+            <!-- NOVO: Problemas Comuns -->
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2101 nav-item elementskit-dropdown-has elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-2101">
+              <a class="dropdown-item ekit-menu-dropdown-toggle" href="https://advjonasstephani.com.br/trabalhista-problemas">Problemas Comuns<i aria-hidden="true" class="icon icon-right-arrow elementskit-submenu-indicator"></i></a>
+              <ul class="elementskit-dropdown elementskit-submenu-panel elementskit-submenu-right">
+                <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/trabalho-sem-carteira">Trabalho sem carteira assinada</a></li>
+                <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/fgts-nao-depositado">FGTS não depositado</a></li>
+                <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/horas-extras">Horas extras</a></li>
+                <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/assedio-moral-no-trabalho">Assédio moral</a></li>
+                <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/rescisao-indireta">Rescisão indireta</a></li>
+                <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/adicional-insalubridade">Adicional de insalubridade</a></li>
+                <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/adicional-periculosidade">Adicional de periculosidade</a></li>
+                <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/nao-recebi-meu-salario">Não recebi meu salário</a></li>
+              </ul>
+            </li>
+            <!-- /NOVO Problemas Comuns -->	
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-19">
+              <a class="dropdown-item" href="https://advjonasstephani.com.br/direito-trabalhista-empregado">Defesa do Empregado</a>
+            </li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-20">
+              <a class="dropdown-item" href="https://advjonasstephani.com.br/direito-trabalhista-empresa">Defesa da Empresa</a>
+            </li>
+		 
+          </ul>
+        </li>
+
+
+
+        <!-- Direito Criminal (base + atalhos urgentes) -->
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-22 nav-item elementskit-dropdown-has elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-22">
+          <a class="dropdown-item ekit-menu-dropdown-toggle" href="https://advjonasstephani.com.br/direito-criminal">Direito Criminal<i aria-hidden="true" class="icon icon-right-arrow elementskit-submenu-indicator"></i></a>
+          <ul class="elementskit-dropdown elementskit-submenu-panel elementskit-submenu-right">
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24 nav-item elementskit-dropdown-has elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-24">
+              <a class="dropdown-item ekit-menu-dropdown-toggle" href="https://advjonasstephani.com.br/crimes-especificos">Crimes Específicos<i aria-hidden="true" class="icon icon-right-arrow elementskit-submenu-indicator"></i></a>
+              <ul class="elementskit-dropdown elementskit-submenu-panel elementskit-submenu-right">
+                <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/trafico-de-drogas">Tráfico de drogas</a></li>
+                <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/estelionato">Estelionato</a></li>
+                <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/furto-e-roubo">Furto e roubo</a></li>
+                <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/lei-maria-da-penha">Lei Maria da Penha</a></li>
+                <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/crimes-de-transito">Crimes de trânsito</a></li>
+                <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/crimes-tributarios">Crimes tributários</a></li>
+                <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/lavagem-de-dinheiro">Lavagem de dinheiro</a></li>
+              </ul>
+            </li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-23 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-23">
+              <a class="dropdown-item" href="https://advjonasstephani.com.br/defesa-criminal-urgente">Defesa Criminal Urgente</a>
+            </li>
+            <!-- /NOVOS -->
+
+
+            <!-- NOVOS atalhos de urgência -->
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2201 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-2201">
+              <a class="dropdown-item" href="https://advjonasstephani.com.br/audiencia-de-custodia">Audiência de Custódia</a>
+            </li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2202 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-2202">
+              <a class="dropdown-item" href="https://advjonasstephani.com.br/acompanhamento-em-delegacia">Acompanhamento em Delegacia</a>
+            </li>
+
+
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-25 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-25">
+              <a class="dropdown-item" href="https://advjonasstephani.com.br/processo-execucao-penal">Processo e Execução Penal</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Direito Médico (base + dois itens novos) -->
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-26 nav-item elementskit-dropdown-has elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-26">
+          <a class="dropdown-item ekit-menu-dropdown-toggle" href="https://advjonasstephani.com.br/direito-medico">Direito Médico<i aria-hidden="true" class="icon icon-right-arrow elementskit-submenu-indicator"></i></a>
+          <ul class="elementskit-dropdown elementskit-submenu-panel elementskit-submenu-right">
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-27">
+              <a class="dropdown-item" href="https://advjonasstephani.com.br/defesa-erro-medico">Defesa em Erro Médico</a>
+            </li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-28">
+              <a class="dropdown-item" href="https://advjonasstephani.com.br/processo-etico-crm">Processo Ético no CRM</a>
+            </li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-29">
+              <a class="dropdown-item" href="https://advjonasstephani.com.br/consultoria-preventiva-medica">Consultoria Médica</a>
+            </li>
+
+            <!-- NOVOS: Publicidade CFM e LGPD -->
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2601 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-2601">
+              <a class="dropdown-item" href="https://advjonasstephani.com.br/publicidade-medica-cfm">Publicidade Médica (CFM)</a>
+            </li>
+            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2602 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-2602">
+              <a class="dropdown-item" href="https://advjonasstephani.com.br/lgpd-clinicas">LGPD para Clínicas</a>
+            </li>
+            <!-- /NOVOS -->
+          </ul>
+        </li>
+
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4001 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-4001"><a class="dropdown-item" href="https://advjonasstephani.com.br/consultoria-preventiva">Consultoria preventiva</a></li>
+      </ul>
+    </li>
+
+    <!-- Escritório (inalterado) -->
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-18 nav-item elementskit-dropdown-has relative_position elementskit-dropdown-menu-default_width elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-18">
+      <a class="ekit-menu-nav-link ekit-menu-dropdown-toggle" href="https://advjonasstephani.com.br/escritorio-advocacia">Escritório<i aria-hidden="true" class="icon icon-down-arrow1 elementskit-submenu-indicator"></i></a>
+      <ul class="elementskit-dropdown elementskit-submenu-panel">
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-36">
+          <a class="dropdown-item" href="https://advjonasstephani.com.br/sobre-nos">Sobre Nós</a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-37">
+          <a class="dropdown-item" href="https://advjonasstephani.com.br/nossa-equipe">Nossa Equipe</a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-38">
+          <a class="dropdown-item" href="https://advjonasstephani.com.br/diferenciais">Diferenciais</a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-39 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-39">
+          <a class="dropdown-item" href="https://advjonasstephani.com.br/atuacao-regiao">Atuação na Região</a>
+        </li>
+      </ul>
+    </li>
+
+    <!-- Casos de Sucesso (inalterado) -->
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-24">
+      <a class="ekit-menu-nav-link" href="#https://advjonasstephani.com.br/casos-de-sucesso">Casos de Sucesso</a>
+    </li>
+
+    <!-- NOVO: Perguntas Frequentes -->
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-42 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-42">
+      <a class="ekit-menu-nav-link" href="https://advjonasstephani.com.br/perguntas-frequentes">Faq</a>
+    </li>
+
+    <!-- Blog Jurídico (inalterado) -->
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-27">
+      <a class="ekit-menu-nav-link" href="https://advjonasstephani.com.br/blog">Blog</a>
+    </li>
+<!-- Atendimento por Regiões (Curitiba + 4 regiões) -->
+<!-- Atendimento por Regiões (links sob /curitiba/<cidade>/index) -->
+<!-- Atendimento por Regiões (cada cidade em /<cidade>/index) -->
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-41 nav-item elementskit-dropdown-has relative_position elementskit-dropdown-menu-default_width elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-41">
+  <a class="ekit-menu-nav-link ekit-menu-dropdown-toggle" href="https://advjonasstephani.com.br/atuacao-regiao">
+    Atendimento<i aria-hidden="true" class="icon icon-down-arrow1 elementskit-submenu-indicator"></i>
+  </a>
+  <ul class="elementskit-dropdown elementskit-submenu-panel">
+    <!-- Curitiba (item direto) -->
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4101 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-4101">
+      <a class="dropdown-item" href="https://advjonasstephani.com.br/curitiba">Curitiba</a>
+    </li>
+
+    <!-- Região Norte / Nordeste -->
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4120 nav-item elementskit-dropdown-has elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-4120">
+      <a class="dropdown-item ekit-menu-dropdown-toggle" href="">
+        Região Norte / Nordeste<i aria-hidden="true" class="icon icon-right-arrow elementskit-submenu-indicator"></i>
+      </a>
+      <ul class="elementskit-dropdown elementskit-submenu-panel elementskit-submenu-right">
+        <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/colombo">Colombo</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/campina-grande-do-sul">Campina Grande do Sul</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/quatro-barras">Quatro Barras</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/rio-branco-do-sul">Rio Branco do Sul</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/bocaiuva-do-sul">Bocaiúva do Sul</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/itaperucu">Itaperuçu</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/almirante-tamandare">Almirante Tamandaré</a></li>
+      </ul>
+    </li>
+
+    <!-- Região Leste -->
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4121 nav-item elementskit-dropdown-has elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-4121">
+      <a class="dropdown-item ekit-menu-dropdown-toggle" href="">
+        Região Leste<i aria-hidden="true" class="icon icon-right-arrow elementskit-submenu-indicator"></i>
+      </a>
+      <ul class="elementskit-dropdown elementskit-submenu-panel elementskit-submenu-right">
+        <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/pinhais">Pinhais</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/piraquara">Piraquara</a></li>
+      </ul>
+    </li>
+
+    <!-- Região Sul / Sudeste -->
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4122 nav-item elementskit-dropdown-has elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-4122">
+      <a class="dropdown-item ekit-menu-dropdown-toggle" href="">
+        Sul / Sudeste<i aria-hidden="true" class="icon icon-right-arrow elementskit-submenu-indicator"></i>
+      </a>
+      <ul class="elementskit-dropdown elementskit-submenu-panel elementskit-submenu-right">
+        <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/sao-jose-dos-pinhais">São José dos Pinhais</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/fazenda-rio-grande">Fazenda Rio Grande</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/mandirituba">Mandirituba</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/contenda">Contenda</a></li>
+      </ul>
+    </li>
+
+    <!-- Região Oeste / Sudoeste -->
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4123 nav-item elementskit-dropdown-has elementskit-mobile-builder-content" data-vertical-menu="750px" id="menu-item-4123">
+      <a class="dropdown-item ekit-menu-dropdown-toggle" href="">
+        Região Oeste / Sudoeste<i aria-hidden="true" class="icon icon-right-arrow elementskit-submenu-indicator"></i>
+      </a>
+      <ul class="elementskit-dropdown elementskit-submenu-panel elementskit-submenu-right">
+        <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/araucaria">Araucária</a></li>
+        <li class="menu-item nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a class="dropdown-item" href="https://advjonasstephani.com.br/campo-largo">Campo Largo</a></li>
+      </ul>
+    </li>
+  </ul>
+</li>
+
+  </ul>
+
+  <div class="elementskit-nav-identity-panel">
+    <button class="elementskit-menu-close elementskit-menu-toggler" type="button">X</button>
+  </div>
+</div>
+
+                <div class="elementskit-menu-overlay elementskit-menu-offcanvas-elements elementskit-menu-toggler ekit-nav-menu--overlay"></div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
+
+<main id="content">
+  <section class="office-wrap grid-2" aria-label="Escritório de Advocacia em Curitiba — apresentação">
+    <div>
+      <span class="chip">Curitiba & RMC • Advocacia moderna</span>
+      <h1>Escritório de Advocacia com foco em estratégia, técnica e transparência</h1>
+      <p class="lead">Atuamos com método claro: diagnóstico preciso, cálculos sólidos, provas organizadas e negociação objetiva.
+        Quando necessário, judicializamos com lastro probatório e acompanhamento próximo até o pagamento.</p>
+      <div>
+        <span class="pill">Piso salarial profissional</span>
+        <span class="pill">Direito do Trabalho</span>
+        <span class="pill">Criminal • urgências</span>
+        <span class="pill">Direito Médico & CRM</span>
+        <span class="pill">Consultoria Preventiva</span>
+      </div>
+    </div>
+    <figure>
+      <img class="hero-img" src="imagens/profissao/contratos.jpg" alt="Escritório de advocacia em Curitiba — equipe analisando contratos" width="960" height="560"/>
+      <figcaption class="tiny">Privacidade, organização e comunicação direta com o cliente.</figcaption>
+    </figure>
+  </section>
+
+  <section id="metodo" class="office-wrap" aria-label="Nosso método de trabalho">
+    <h2>Como trabalhamos</h2>
+    <div class="timeline" role="list">
+      <div class="step" role="listitem" data-step="1"><h3>Triagem</h3><p>Entendimento do caso, urgência e documentação mínima.</p></div>
+      <div class="step" role="listitem" data-step="2"><h3>Diagnóstico</h3><p>Auditoria em holerites, contratos, ponto, RRT/CRM ou BO/peças.</p></div>
+      <div class="step" role="listitem" data-step="3"><h3>Estratégia</h3><p>Rotas de acordo, cálculos e riscos. Transparência total.</p></div>
+      <div class="step" role="listitem" data-step="4"><h3>Execução</h3><p>Negociação, audiência, petições e prova técnica.</p></div>
+      <div class="step" role="listitem" data-step="5"><h3>Resultado</h3><p>Acordo ou sentença, com acompanhamento até o pagamento.</p></div>
+    </div>
+  </section>
+
+  <section class="office-wrap grid-3" aria-label="Estrutura e diferenciais">
+    <article class="card">
+      <h3>Técnica aplicada</h3>
+      <p>Cálculos de piso (Lei 4.950-A/66), horas extras e retroativos. Dossiês com prints, planilhas e comparativos.</p>
+    </article>
+    <article class="card">
+      <h3>Atendimento humano</h3>
+      <p>Comunicação direta. Canal de urgência para criminal (custódia/delegacia) e orientações rápidas no trabalhista.</p>
+    </article>
+    <article class="card">
+      <h3>Compliance e LGPD</h3>
+      <p>Políticas de privacidade, guarda de documentos e revisão de publicidade médica conforme CFM.</p>
+    </article>
+  </section>
+
+  <section id="areas" class="office-wrap grid-2" aria-label="Áreas que atendemos">
+    <div>
+      <h2>Áreas de atuação, sem juridiquês</h2>
+      <p class="lead">Conteúdo objetivo e local. Clique para ver guias práticos, exemplos e perguntas frequentes.</p>
+      <ul class="link-list">
+        <li><a href="piso-salarial" title="Piso salarial profissional">Piso Salarial Profissional</a></li>
+        <li><a href="direito-trabalhista" title="Direito do Trabalho">Direito Trabalhista</a></li>
+        <li><a href="direito-criminal" title="Direito Criminal">Direito Criminal</a></li>
+        <li><a href="direito-medico" title="Direito Médico">Direito Médico</a></li>
+        <li><a href="consultoria-preventiva" title="Consultoria Preventiva">Consultoria Preventiva</a></li>
+        <li><a href="areas-de-atuacao" title="Todas as áreas">Ver todas as áreas</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Onde atuamos</h3>
+      <p>Curitiba e toda a RMC: Colombo, São José dos Pinhais, Pinhais, Araucária, Campo Largo, Fazenda Rio Grande e outras.</p>
+      <p class="tiny">Audiências e diligências em todo o Paraná, conforme agenda.</p>
+    </div>
+  </section>
+
+  <section class="office-wrap kpis" aria-label="Indicadores do escritório">
+    <div class="kpi"><span>Casos de piso ativos</span><b>47</b></div>
+    <div class="kpi"><span>Retroativos pagos (R$)</span><b>1.800.000</b></div>
+    <div class="kpi"><span>Tempo médio de acordo</span><b>63 dias</b></div>
+    <div class="kpi"><span>Atendimentos na RMC</span><b>120+</b></div>
+  </section>
+
+  <section class="office-wrap grid-2" aria-label="Equipe e governança">
+    <div class="card">
+      <h3>Equipe sênior (sem exposição indevida)</h3>
+      <p>Atuação coordenada por advogados com experiência prática. Evitamos divulgar nomes e fotos em excesso para priorizar segurança e foco no cliente.</p>
+    </div>
+    <div class="card">
+      <h3>Governança</h3>
+      <p>Rotinas de dupla checagem, matriz de risco e comunicação de status. Documentos versionados e acessíveis sob demanda.</p>
+    </div>
+  </section>
+
+
+
+  <section class="office-wrap" aria-label="Perguntas rápidas">
+    <h2>Perguntas rápidas</h2>
+    <details class="card"><summary>Vocês atendem apenas em Curitiba?</summary><p>Não. Também atendemos toda a Região Metropolitana, com opção de atendimento online.</p></details>
+    <details class="card"><summary>Quais documentos enviar primeiro?</summary><p>Contrato/CTPS, holerites, ponto/espelho, prints relevantes; em médico, RRT/CRM; em criminal, BO e dados de custódia.</p></details>
+    <details class="card"><summary>Como funcionam os honorários?</summary><p>Variam conforme risco e complexidade. Em trabalhista é comum pacto de êxito sobre o recuperado.</p></details>
+  </section>
+    <section class="office-wrap cta" aria-label="Contato">
+    <div>
+      <h3>Precisa de orientação agora?</h3>
+      <p>Envie um resumo e seus documentos principais. Indicamos o melhor caminho em linguagem simples.</p>
+    </div>
+    <a class="btn" href="https://wa.me/5541992760819" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">Falar no Whats</a>
+  </section>
+</main>
+
+<footer id="colophon" itemscope="itemscope" itemtype="https://schema.org/WPFooter" role="contentinfo">
+<div class="footer-width-fixer"> <div class="elementor elementor-33" data-elementor-id="33" data-elementor-type="wp-post">
+<div class="elementor-element elementor-element-a6a259c e-flex e-con-boxed e-con e-parent" data-element_type="container" data-id="a6a259c" data-settings='{"background_background":"classic"}'>
+<div class="e-con-inner">
+<div class="elementor-element elementor-element-ee00475 e-con-full e-flex e-con e-child" data-element_type="container" data-id="ee00475">
+
+<div class="elementor-element elementor-element-e996262 elementor-widget elementor-widget-metform" data-element_type="widget" data-id="e996262" data-widget_type="metform.default">
+<div class="elementor-widget-container">
+<div class="mf-scroll-top-no" data-editswitchopen="" data-erroricon="fas fa-exclamation-triangle" data-messageposition="top" data-previous-steps-style="" data-response_type="alert" data-successicon="fas fa-check" id="mf-response-props-id-184">
+<div class="formpicker_warper formpicker_warper_editable" data-metform-formpicker-key="184">
+<div class="mf-widget-container">
+<div class="mf-form-wrapper" data-action="wp-json/metform/v1/entries/insert/184" data-form-id="184" data-form-nonce="497e85c23d" data-form-type="contact_form" data-quiz-summery="false" data-save-progress="false" data-stop-vertical-effect="" data-wp-nonce="39a6b2ae16" id="metform-wrap-e996262-184"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-9a3f0ec e-flex e-con-boxed e-con e-parent" data-element_type="container" data-id="9a3f0ec" data-settings='{"background_background":"classic"}'>
+<div class="e-con-inner">
+<div class="elementor-element elementor-element-6d9afc3 e-con-full e-flex e-con e-child" data-element_type="container" data-id="6d9afc3">
+<div class="elementor-element elementor-element-38f4519 e-con-full e-flex e-con e-child" data-element_type="container" data-id="38f4519">
+<div class="elementor-element elementor-element-77fbfe4 e-con-full e-flex e-con e-child" data-element_type="container" data-id="77fbfe4">
+<div class="elementor-element elementor-element-404c061 elementor-widget elementor-widget-image" data-element_type="widget" data-id="404c061" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<a href="https://advjonasstephani.com.br/">
+<img alt="Jonas Stephâni Advocacia em Curitiba" class="attachment-large size-large wp-image-109" height="60" src="https://advjonasstephani.com.br/imagens/logo.png" width="250"/> </a>
+</div>
+</div>
+<div class="elementor-element elementor-element-174eb04 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="174eb04" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+Defendemos seus direitos com a seriedade e competência que seu caso merece. Advocacia moderna, acessível e focada em resultados.
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-04b220a e-con-full e-flex e-con e-child" data-element_type="container" data-id="04b220a">
+<div class="elementor-element elementor-element-fd9275d elementor-widget elementor-widget-heading" data-element_type="widget" data-id="fd9275d" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h4 class="elementor-heading-title elementor-size-default">Navegação</h4> </div>
+</div>
+<div class="elementor-element elementor-element-0bc2c3e elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="0bc2c3e" data-widget_type="icon-list.default">
+<div class="elementor-widget-container">
+<ul class="elementor-icon-list-items">
+<li class="elementor-icon-list-item">
+<a href="https://advjonasstephani.com.br/">
+<span class="elementor-icon-list-text">Início</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://advjonasstephani.com.br/sobre-nos">
+<span class="elementor-icon-list-text">O Escritório</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://advjonasstephani.com.br/areas-de-atuacao">
+<span class="elementor-icon-list-text">Áreas de Atuação</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://advjonasstephani.com.br/blog">
+<span class="elementor-icon-list-text">Blog</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://advjonasstephani.com.br/perguntas-frequentes">
+<span class="elementor-icon-list-text">FAQ</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="#https://advjonasstephani.com.br/contato">
+<span class="elementor-icon-list-text">Contato</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-4a1e977 e-con-full e-flex e-con e-child" data-element_type="container" data-id="4a1e977">
+<div class="elementor-element elementor-element-17348ea elementor-widget elementor-widget-heading" data-element_type="widget" data-id="17348ea" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h4 class="elementor-heading-title elementor-size-default">Áreas de Atuação</h4> </div>
+</div>
+<div class="elementor-element elementor-element-f5d1175 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="f5d1175" data-widget_type="icon-list.default">
+<div class="elementor-widget-container">
+<ul class="elementor-icon-list-items">
+<li class="elementor-icon-list-item">
+<a href="https://advjonasstephani.com.br/direito-trabalhista">
+<span class="elementor-icon-list-text">Direito do Trabalho</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://advjonasstephani.com.br/direito-criminal">
+<span class="elementor-icon-list-text">Direito Criminal</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://advjonasstephani.com.br/direito-medico">
+<span class="elementor-icon-list-text">Direito Médico</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://advjonasstephani.com.br/consultoria-preventiva">
+<span class="elementor-icon-list-text">Consultoria Preventiva</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://advjonasstephani.com.br/piso-salarial">
+<span class="elementor-icon-list-text">Piso Salarial Profissional</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-d6f03c6 e-con-full e-flex e-con e-child" data-element_type="container" data-id="d6f03c6">
+<div class="elementor-element elementor-element-53b82ee elementor-widget elementor-widget-heading" data-element_type="widget" data-id="53b82ee" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h4 class="elementor-heading-title elementor-size-default">Contato
+</h4> </div>
+</div>
+<div class="elementor-element elementor-element-1f671b3 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="1f671b3" data-widget_type="icon-list.default">
+<div class="elementor-widget-container">
+<ul class="elementor-icon-list-items">
+<li class="elementor-icon-list-item">
+<a href="https://advjonasstephani.com.br/">
+<span class="elementor-icon-list-text">Endereço:</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="https://advjonasstephani.com.br/">
+<span class="elementor-icon-list-text">R. Manoel Bandeira, 157 - Vargem Grande, Pinhais - PR</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="tel:+5541992760819">
+<span class="elementor-icon-list-text">Telefone: (41) 99276-0819</span>
+</a>
+</li>
+<li class="elementor-icon-list-item">
+<a href="mailto:contato@advjonasstephani.com.br">
+<span class="elementor-icon-list-text">Email: contato@advjonasstephani.com.br</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-3eb780e e-con-full e-flex e-con e-child" data-element_type="container" data-id="3eb780e">
+<div class="elementor-element elementor-element-72e16ea e-con-full e-flex e-con e-child" data-element_type="container" data-id="72e16ea">
+<div class="elementor-element elementor-element-5522ce3 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="5522ce3" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p>© 2025 Jonas Stephâni Advocacia. Todos os direitos reservados.</p></div>
+</div>
+</div>
+<div class="elementor-element elementor-element-9cf9917 e-con-full e-flex e-con e-child" data-element_type="container" data-id="9cf9917">
+<div class="elementor-element elementor-element-f6aace7 elementor-icon-list--layout-inline elementor-align-right elementor-mobile-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-element_type="widget" data-id="f6aace7" data-widget_type="icon-list.default">
+<div class="elementor-widget-container">
+<ul class="elementor-icon-list-items elementor-inline-items">
+<li class="elementor-icon-list-item elementor-inline-item">
+<a href="https://advjonasstephani.com.br/">
+<span class="elementor-icon-list-icon">
+<i aria-hidden="true" class="fab fa-whatsapp"></i> </span>
+<span class="elementor-icon-list-text"></span>
+</a>
+</li>
+<li class="elementor-icon-list-item elementor-inline-item">
+<a href="https://advjonasstephani.com.br/">
+<span class="elementor-icon-list-icon">
+<i aria-hidden="true" class="fab fa-instagram"></i> </span>
+<span class="elementor-icon-list-text"></span>
+</a>
+</li>
+<li class="elementor-icon-list-item elementor-inline-item">
+<a href="https://advjonasstephani.com.br/">
+<span class="elementor-icon-list-icon">
+<i aria-hidden="true" class="icon icon-linkedin"></i> </span>
+<span class="elementor-icon-list-text"></span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</footer>
+
+</body>
+</html>
