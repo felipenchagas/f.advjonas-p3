@@ -1,147 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Advogado em Curitiba | Atendimento por Bairros e Áreas</title>
-<meta name="description" content="Atendimento jurídico em Curitiba e Região Metropolitana. Páginas por bairro (Batel, Centro, Água Verde, Cabral, Juvevê, Portão, CIC, Boqueirão, Santa Felicidade e outros). Trabalhista, Criminal, Médico e Consultoria Preventiva."/>
-<link rel="canonical" href="https://advjonasstephani.com.br/curitiba/"/>
-<link rel="stylesheet" href="../css/style.css"/>
-
-<!-- CSS adicional (tema claro - namespaced .loc-*) -->
-<style>
-  :root{
-    --loc-bg: #f7fafc;
-    --loc-surface: #ffffff;
-    --loc-surface-2:#f0f5ff;
-    --loc-border:#e5ecf7;
-    --loc-shadow:0 10px 30px rgba(16,38,72,.08);
-    --loc-text:#0b1b2b;
-    --loc-muted:#607089;
-    --loc-accent:#0aa2c0;
-    --loc-accent-2:#14b87a;
-    --loc-radius:18px;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advogado em Curitiba | Escritório de Advocacia Especialista</title>
+  <meta name="description" content="Advogado especialista em Curitiba para causas Trabalhistas, Criminais e Médicas. Atendimento personalizado e ágil na capital paranaense.">
+  <link rel="canonical" href="https://advjonasstephani.com.br/area/curitiba/">
+  <link rel="shortcut icon" href="../../assets/img/logo/logo6.png">
+  <link rel="stylesheet" href="../../assets/css/plugins/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/css/plugins/fontawesome.css">
+  <link rel="stylesheet" href="../../assets/css/typography.css">
+  <link rel="stylesheet" href="../../assets/scss/master.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>.faq-section{margin-top:40px;border-top:1px solid #eee;padding-top:30px}.faq-item{margin-bottom:20px}.faq-question{font-weight:bold;color:#333;cursor:pointer;font-size:18px}.faq-answer{margin-top:10px;padding-left:20px;border-left:2px solid #C0B596;color:#555}</style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LegalService",
+        "name": "Jonas Stephani Advocacia em Curitiba",
+        "url": "https://advjonasstephani.com.br/area/curitiba/",
+        "image": "https://advjonasstephani.com.br/area/imagem/service-left-img1.png",
+        "telephone": "+5541992760819",
+        "description": "Escritório de advocacia com atuação dedicada em Curitiba, oferecendo defesa especializada em Direito Trabalhista, Criminal e Médico.",
+        "address": {"@type": "PostalAddress", "addressLocality": "Curitiba", "addressRegion": "PR", "addressCountry": "BR"},
+        "areaServed": {"@type": "City", "name": "Curitiba"}
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "Como contratar um advogado especialista em Curitiba do seu escritório?", "acceptedAnswer": {"@type": "Answer", "text": "É simples. Você pode entrar em contato diretamente pelo nosso WhatsApp (41) 99276-0819 ou preencher o formulário em nosso site. Realizamos atendimentos online para sua comodidade ou presenciais em local a combinar em Curitiba."}},
+          {"@type": "Question", "name": "O atendimento para urgências criminais em Curitiba é 24 horas?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Nossa equipe de advogados criminalistas em Curitiba está de plantão 24 horas por dia, 7 dias por semana, para atender casos urgentes como prisões em flagrante, mandados de busca e apreensão e audiências de custódia."}},
+          {"@type": "Question", "name": "Vocês atuam em casos de direito trabalhista para empresas de Curitiba?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Além de defender os direitos dos trabalhadores, oferecemos uma robusta assessoria jurídica para empresas em Curitiba, focada em compliance, defesa em processos e consultoria para minimizar riscos trabalhistas."}},
+          {"@type": "Question", "name": "Sou profissional da saúde em Curitiba, qual o suporte em Direito Médico?", "acceptedAnswer": {"@type": "Answer", "text": "Oferecemos defesa especializada para médicos e outros profissionais da saúde em processos ético-profissionais no CRM e em processos judiciais por erro médico. Também prestamos consultoria sobre publicidade médica e adequação à LGPD para clínicas e consultórios em Curitiba."}},
+          {"@type": "Question", "name": "O escritório está fisicamente localizado em Curitiba?", "acceptedAnswer": {"@type": "Answer", "text": "Nossa base principal está em Pinhais, na Região Metropolitana, o que nos permite ter um acesso logístico privilegiado a toda Curitiba e cidades vizinhas. Atendemos clientes de todos os bairros da capital com a mesma eficiência."}}
+        ]
+      }
+    ]
   }
-  .loc-page{background:linear-gradient(180deg,var(--loc-bg) 0,#eef3fb 100%);color:var(--loc-text);}
-  .loc-wrap{max-width:1200px;margin:0 auto;padding:48px 20px;}
-  .loc-hero{position:relative;overflow:clip}
-  .loc-hero .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}
-  .loc-chip { display: inline-flex; gap: 8px; align-items: center; background: linear-gradient(90deg, #B8860B, #2C3E50); color: #FFFFFF; padding: 6px 12px; border-radius: 999px; font-weight: 800; font-size: .9rem; }
-  .loc-hero h1{font-size:clamp(1.6rem,2.6vw,2.6rem);line-height:1.15;margin:16px 0 10px}
-  .loc-lead{color:var(--loc-muted);max-width:64ch}
-  .loc-actions{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
-  .loc-btn{border:none;border-radius:14px;padding:12px 16px;font-weight:800;box-shadow:var(--loc-shadow);text-decoration:none;cursor:pointer}
-    .loc-btn.primary {
-  background: linear-gradient(90deg, #B8860B, #2C3E50); /* Dourado para Azul Escuro */
-  color: #FFFFFF; /* Texto branco puro para alto contraste */
-  /* Ou, se quiser um dourado mais claro para o texto: */
-  /* color: #FFD700; */ /* Dourado mais claro */
-  padding: 10px 20px; /* Ajuste o padding conforme necessário */
-  border-radius: 8px; /* Borda arredondada como no exemplo */
-  font-family: sans-serif; /* Use a fonte que desejar */
-  font-weight: bold; /* Para o texto se destacar */
-  text-decoration: none; /* Se for um link */
-  display: inline-block; /* Para o padding funcionar corretamente em links */
-}
-  .loc-btn.ghost{background:transparent;border:1px solid var(--loc-border);color:var(--loc-text)}
-  .loc-card{background:var(--loc-surface);border:1px solid var(--loc-border);border-radius:var(--loc-radius);box-shadow:var(--loc-shadow);padding:18px}
-
-  .loc-pills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-  .loc-pill{background:var(--loc-surface-2);border:1px solid var(--loc-border);border-radius:14px;padding:12px;text-align:center}
-  .loc-pill b{display:block}
-
-  /* bairros */
-  .loc-neigh{margin-top:34px}
-  .loc-neigh .head{display:flex;flex-wrap:wrap;align-items:center;gap:12px;justify-content:space-between;margin-bottom:12px}
-  .loc-search{flex:1;min-width:240px;display:flex;align-items:center;gap:8px;background:var(--loc-surface);border:1px solid var(--loc-border);border-radius:12px;padding:10px 12px;box-shadow:var(--loc-shadow)}
-  .loc-search input{border:none;outline:none;background:transparent;width:100%}
-  .loc-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
-  .loc-tile{background:var(--loc-surface);border:1px solid var(--loc-border);border-radius:14px;padding:14px 14px 12px;transition:.2s;display:flex;flex-direction:column;justify-content:space-between}
-  .loc-tile:hover{transform:translateY(-2px) scale(1.01)}
-  .loc-tile h3{margin:0 0 4px;font-size:1rem}
-  .loc-tile p{margin:0;color:var(--loc-muted);font-size:.9rem}
-  .loc-tile a{margin-top:10px;align-self:flex-start;text-decoration:none;font-weight:800;color:#0a5972}
-  @media (max-width:980px){.loc-hero .grid{grid-template-columns:1fr}.loc-grid{grid-template-columns:repeat(2,1fr)}}
-  @media (max-width:560px){.loc-grid{grid-template-columns:1fr}}
-
-  /* áreas curitiba */
-  .loc-areas{margin-top:36px}
-  .loc-areas .cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
-  .loc-areas .card{background:var(--loc-surface);border:1px solid var(--loc-border);border-radius:16px;padding:16px;box-shadow:var(--loc-shadow)}
-  .loc-areas .card h3{margin:.2rem 0 .3rem;font-size:1rem}
-  .loc-areas .card p{color:var(--loc-muted);margin:.2rem 0 .6rem}
-  .loc-areas .card a{font-weight:800;color:#0a5972;text-decoration:none}
-  @media (max-width:980px){.loc-areas .cards{grid-template-columns:repeat(2,1fr)}}
-  @media (max-width:560px){.loc-areas .cards{grid-template-columns:1fr}}
-
-  /* RMC */
-  .loc-rmc{margin-top:30px}
-  .loc-rmc .list{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
-  .loc-rmc a{display:block;background:var(--loc-surface);border:1px solid var(--loc-border);border-radius:999px;padding:10px 14px;text-decoration:none;color:#0a5972;text-align:center;font-weight:700}
-  @media (max-width:980px){.loc-rmc .list{grid-template-columns:repeat(3,1fr)}}
-  @media (max-width:560px){.loc-rmc .list{grid-template-columns:repeat(2,1fr)}}
-
-  /* FAQ */
-  .loc-faq details{background:var(--loc-surface);border:1px solid var(--loc-border);border-radius:14px;padding:12px 14px;margin:10px 0;box-shadow:var(--loc-shadow)}
-  .loc-faq summary{cursor:pointer;font-weight:800}
-  .loc-faq p{color:#3e4f69;margin:.5rem 0 0}
-
-  /* CTA */
-  .loc-cta{margin:26px 0 44px;display:flex;align-items:center;justify-content:space-between;gap:18px;background:linear-gradient(90deg,rgba(33,200,246,.12),rgba(110,231,183,.12));border:1px solid #bfeff9;border-radius:18px;padding:16px 18px}
-  .loc-cta h3{margin:0}
-  .loc-cta p{color:#37586f}
-</style>
-
-<!-- Open Graph -->
-<meta property="og:title" content="Advogado em Curitiba"/>
-<meta property="og:description" content="Atendimento por bairros em Curitiba e Região Metropolitana. Trabalhista, Criminal, Médico e Consultoria."/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="https://advjonasstephani.com.br/curitiba/"/>
-<meta property="og:image" content="https://advjonasstephani.com.br/imagens/profissao/contratos.jpg"/>
-
-<!-- SCHEMAS (JSON-LD) -->
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"WebPage",
-  "name":"Advogado em Curitiba",
-  "url":"https://advjonasstephani.com.br/curitiba/",
-  "inLanguage":"pt-BR",
-  "description":"Atendimento jurídico por bairros em Curitiba e cidades da Região Metropolitana.",
-  "speakable":{"@type":"SpeakableSpecification","xpath": ["//h1","//section[@id='bairros']/h2"]},
-  "potentialAction":{"@type":"SearchAction","target":"https://advjonasstephani.com.br/busca?q={q}","query-input":"required name=q"}
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"BreadcrumbList",
-  "itemListElement":[
-    {"@type":"ListItem","position":1,"name":"Início","item":"https://advjonasstephani.com.br/"},
-    {"@type":"ListItem","position":2,"name":"Curitiba","item":"https://advjonasstephani.com.br/curitiba/"}
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"LegalService",
-  "name":"Atendimento Jurídico – Curitiba",
-  "url":"https://advjonasstephani.com.br/curitiba/",
-  "areaServed":{"@type":"City","name":"Curitiba"},
-  "serviceArea":{"@type":"AdministrativeArea","name":"Região Metropolitana de Curitiba"},
-  "address":{"@type":"PostalAddress","addressLocality":"Curitiba","addressRegion":"PR","addressCountry":"BR"},
-  "telephone":"+55 41 99276-0819",
-  "sameAs":["https://wa.me/5541992760819"]
-}
-</script>
-
+  </script>
 </head>
-<body class="wp-singular envato_tk_templates-template envato_tk_templates-template-elementor_header_footer single single-envato_tk_templates postid-37 wp-embed-responsive wp-theme-hello-elementor ehf-header ehf-footer ehf-template-hello-elementor ehf-stylesheet-hello-elementor theme-default elementor-default elementor-template-full-width elementor-kit-6 elementor-page elementor-page-37">
-<div id="page" class="hfeed site">
-
-  <header id="masthead" itemscope="itemscope" itemtype="https://schema.org/WPHeader" style="background-color: #282e3f;">
-       <p class="main-title bhf-hidden" itemprop="headline"><a href="https://advjonasstephani.com.br/" rel="home" title="Barristar">Advogado Jonas Stephâni</a></p>
+<body class="inner-pages">
+<header id="masthead" itemscope="itemscope" itemtype="https://schema.org/WPHeader" style="background-color: #282e3f;">
+   <p class="main-title bhf-hidden" itemprop="headline"><a href="https://advjonasstephani.com.br/" rel="home" title="Barristar">Advogado Jonas Stephâni</a></p>
    <div class="elementor elementor-1247" data-elementor-id="1247" data-elementor-type="wp-post">
       <div class="elementor-element elementor-element-beab667 e-flex e-con-boxed e-con e-child" data-element_type="container" data-id="beab667" data-settings='{"background_background":"classic"}'>
          <div class="e-con-inner">
@@ -597,213 +499,55 @@
          </div>
       </div>
    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="loc-wrap loc-hero" aria-label="Atendimento jurídico em Curitiba">
-    <div class="grid">
-      <div>
-        <span class="loc-chip">Curitiba • Atendimento por bairros</span>
-        <h1>Advogado em Curitiba: atuação presencial e online, do bairro ao centro</h1>
-        <p class="loc-lead">Organizamos o site por bairros para você encontrar rapidamente a atuação perto de casa ou do trabalho. Cobrimos Curitiba inteira e cidades da RMC, com frentes em <strong>Direito Trabalhista</strong>, <strong>Direito Criminal</strong>, <strong>Direito Médico</strong> e <strong>Consultoria Preventiva</strong>.</p>
-        <div class="loc-actions">
-          <a class="loc-btn primary" href="https://wa.me/5541992760819" target="_blank" rel="noopener">Falar no Whats</a>
-          <a class="loc-btn ghost" href="bairros">Ver bairros</a>
-        </div>
+</header>
+<div class="paginacontainer"><div class="progress-wrap"><svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"><path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/></svg></div></div>
+<div class="welcome-inner-section-area" style="background-image: url(../../assets/img/bacground/inner-bg.png);">
+  <div class="container"><div class="row"><div class="col-lg-8 m-auto"><div class="welcome-inner-header text-center">
+    <h1>Advogado Especialista em Curitiba, PR</h1>
+    <a href="../../index.html">Início</a><span> </span><a href="../">Atendimento</a><span> </span><span>Curitiba</span>
+  </div></div></div></div>
+</div>
+<div class="service-left-inner-area sp1">
+  <div class="container"><div class="row"><div class="col-lg-8 m-auto"><div class="service-rightbar-area">
+    <div class="service-img"><img src="../imagem/service-left-img1.png" alt="Advogado especialista em Curitiba, PR"></div>
+    <div class="service-left-text">
+      <h2>Defesa dos Seus Direitos no Coração do Paraná</h2>
+      <p>Em uma metrópole como <strong>Curitiba</strong>, a complexidade das relações de trabalho, as dinâmicas sociais e a alta demanda por serviços de saúde criam um cenário onde a segurança jurídica é fundamental. Ter um <strong>advogado em Curitiba</strong> que compreende as nuances da capital paranaense é um diferencial decisivo para o sucesso da sua causa.</p>
+      <p>A Jonas Stephani Advocacia combina profundo conhecimento técnico com uma atuação próxima e estratégica, garantindo que você, cidadão ou empresário curitibano, tenha seus direitos plenamente defendidos.</p>
+    </div>
+    <div class="service-left-text2">
+      <h2>Atuação Jurídica Focada nas Necessidades de Curitiba</h2>
+      <p>Nossos serviços em Curitiba são moldados para atender às demandas específicas da cidade, desde as relações de trabalho nos grandes centros comerciais e industriais até a defesa criminal em uma capital com mais de 2 milhões de habitantes.</p>
+      <h4>Nossas especialidades incluem:</h4>
+      <div class="list">
+        <ul>
+          <li><a href="../../direito-trabalhista.html"><img src="../../assets/img/icons/check-img5.svg" alt="check"><strong>Direito Trabalhista em Curitiba:</strong> Atuação em casos de demissão, reversão de justa causa, horas extras e assédio para trabalhadores e empresas da capital.</a></li>
+          <li><a href="../../direito-criminal.html"><img src="../../assets/img/icons/check-img5.svg" alt="check"><strong>Advogado Criminal 24h:</strong> Defesa rápida e técnica para casos de flagrante, audiências de custódia e processos criminais em toda Curitiba.</a></li>
+          <li><a href="../../direito-medico.html"><img src="../../assets/img/icons/check-img5.svg" alt="check"><strong>Direito Médico na Capital da Saúde:</strong> Suporte a pacientes e defesa de médicos e clínicas nos renomados hospitais e consultórios de Curitiba.</a></li>
+        </ul>
       </div>
-      <aside class="loc-card" aria-label="Atalhos úteis">
-        <div class="loc-pills">
-          <div class="loc-pill"><b>Central</b><span>Centro, Batel, Rebouças</span></div>
-          <div class="loc-pill"><b>Boqueirão</b><span>Hauer, Xaxim</span></div>
-          <div class="loc-pill"><b>Boa Vista</b><span>Cabral, Juvevê, Ahú</span></div>
-        </div>
-      </aside>
     </div>
-  </section>
-
-  <!-- BAIRROS -->
-  <section id="bairros" class="loc-wrap loc-neigh" aria-label="Bairros de Curitiba atendidos">
-    <div class="head">
-      <h2>Bairros atendidos</h2>
-      <label class="loc-search" aria-label="Filtrar bairros">
-        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#7d8aa4" d="M15.5 14h-.79l-.28-.27A6.5 6.5 0 1 0 14 15.5l.27.28v.79l5 5 1.5-1.5-5-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/></svg>
-        <input id="locFilter" type="search" placeholder="Digite o bairro (ex.: Batel, Água Verde, Cabral)"/>
-      </label>
+    <div class="service-left-text3">
+      <h2>Estratégia e Proximidade em sua Defesa</h2>
+      <p>Entendemos que cada caso é único. Por isso, dedicamos tempo para analisar os detalhes da sua situação, construindo uma estratégia de defesa sólida e personalizada. Nossa presença na Região Metropolitana nos permite agilidade e um conhecimento aprofundado do judiciário local.</p>
+      <div class="row">
+        <div class="col-lg-6 col-md-6"><div class="service-left-img"><img src="../imagem/service-left-img2.png" alt="Estratégia jurídica em Curitiba"></div></div>
+        <div class="col-lg-6 col-md-6"><div class="service-left-img"><img src="../imagem/service-left-img3.png" alt="Atendimento de advocacia em Curitiba"></div></div>
+      </div>
     </div>
-
-    <div class="loc-grid" id="locGrid">
-      <!-- alguns centrais -->
-      <article class="loc-tile" data-name="Centro">
-        <h3>Centro</h3><p>Para ações rápidas e audiências próximas ao Fórum Central.</p>
-        <a href="./centro" aria-label="Página do bairro Centro">Abrir página</a>
-      </article>
-      <article class="loc-tile" data-name="Batel">
-        <h3>Batel</h3><p>Atendimento próximo a escritórios e clínicas.</p>
-        <a href="./batel" aria-label="Página do bairro Batel">Abrir página</a>
-      </article>
-      <article class="loc-tile" data-name="Água Verde">
-        <h3>Água Verde</h3><p>Rotina de empresas e profissionais liberais.</p>
-        <a href="./agua-verde" aria-label="Página do bairro Água Verde">Abrir página</a>
-      </article>
-      <article class="loc-tile" data-name="Bigorrilho">
-        <h3>Bigorrilho (Champagnat)</h3><p>Residencial e comercial, fácil acesso ao centro.</p>
-        <a href="./bigorrilho">Abrir página</a>
-      </article>
-
-      <!-- boa vista / cabral / juveve / ahu -->
-      <article class="loc-tile" data-name="Cabral">
-        <h3>Cabral</h3><p>Próximo a órgãos públicos e serviços.</p>
-        <a href="./cabral">Abrir página</a>
-      </article>
-      <article class="loc-tile" data-name="Juvevê">
-        <h3>Juvevê</h3><p>Empresas de serviços e saúde em crescimento.</p>
-        <a href="./juveve">Abrir página</a>
-      </article>
-      <article class="loc-tile" data-name="Ahú">
-        <h3>Ahú</h3><p>Entre residências e cartórios; logística facilitada.</p>
-        <a href="./ahu">Abrir página</a>
-      </article>
-      <article class="loc-tile" data-name="Cristo Rei">
-        <h3>Cristo Rei</h3><p>Próximo ao Jardim Botânico e hospitais.</p>
-        <a href="./cristo-rei">Abrir página</a>
-      </article>
-
-      <!-- portão | boqueirão | sitiocercado | pinheirinho | xaxim -->
-      <article class="loc-tile" data-name="Portão">
-        <h3>Portão</h3><p>Comércio forte e empresas de varejo.</p>
-        <a href="./portao">Abrir página</a>
-      </article>
-      <article class="loc-tile" data-name="Boqueirão Hauer Xaxim">
-        <h3>Boqueirão / Hauer / Xaxim</h3><p>Atendimento próximo às indústrias e serviços.</p>
-        <a href="./boqueirao">Abrir página</a>
-      </article>
-      <article class="loc-tile" data-name="Pinheirinho">
-        <h3>Pinheirinho</h3><p>Empresas de logística e eixos de transporte.</p>
-        <a href="./pinheirinho">Abrir página</a>
-      </article>
-      <article class="loc-tile" data-name="Sítio Cercado">
-        <h3>Sítio Cercado</h3><p>Conexão rápida com Boqueirão e Alto Boqueirão.</p>
-        <a href="./sitio-cercado">Abrir página</a>
-      </article>
-
-      <!-- santa felicidade | mercês | são lourenço | pilarzinho -->
-      <article class="loc-tile" data-name="Santa Felicidade">
-        <h3>Santa Felicidade</h3><p>Restaurantes, turismo e clínicas.</p>
-        <a href="./santa-felicidade">Abrir página</a>
-      </article>
-      <article class="loc-tile" data-name="Mercês">
-        <h3>Mercês</h3><p>Residencial, acesso rápido ao centro.</p>
-        <a href="./merces">Abrir página</a>
-      </article>
-      <article class="loc-tile" data-name="São Lourenço">
-        <h3>São Lourenço</h3><p>Serviços e instituições educacionais.</p>
-        <a href="./sao-lourenco">Abrir página</a>
-      </article>
-      <article class="loc-tile" data-name="Pilarzinho">
-        <h3>Pilarzinho</h3><p>Atendimento prático para a região norte.</p>
-        <a href="./pilarzinho">Abrir página</a>
-      </article>
-
-      <!-- boa vista set -->
-      <article class="loc-tile" data-name="Boa Vista Abranches Barreirinha">
-        <h3>Boa Vista / Abranches / Barreirinha</h3><p>Empresas locais e corredores de serviço.</p>
-        <a href="./boa-vista">Abrir página</a>
-      </article>
-
-      <!-- CIC | Cajuru | Uberaba | Prado Velho | Alto da XV -->
-      <article class="loc-tile" data-name="CIC Cidade Industrial">
-        <h3>Cidade Industrial (CIC)</h3><p>Foco em relações de trabalho e contratos.</p>
-        <a href="./cic">Abrir página</a>
-      </article>
-      <article class="loc-tile" data-name="Cajuru">
-        <h3>Cajuru</h3><p>Setor de serviços e universidades próximas.</p>
-        <a href="./cajuru">Abrir página</a>
-      </article>
-      <article class="loc-tile" data-name="Uberaba">
-        <h3>Uberaba</h3><p>Eixo para aeroportos e logística.</p>
-        <a href="./uberaba">Abrir página</a>
-      </article>
-      <article class="loc-tile" data-name="Prado Velho Alto da XV">
-        <h3>Prado Velho / Alto da XV</h3><p>Apoio a estudantes e instituições.</p>
-        <a href="./alto-da-xv">Abrir página</a>
-      </article>
-
-      <!-- Tatuquara | Campo de Santana -->
-      <article class="loc-tile" data-name="Tatuquara Campo de Santana">
-        <h3>Tatuquara / Campo de Santana</h3><p>Empresas em expansão e novas moradias.</p>
-        <a href="./tatuquara">Abrir página</a>
-      </article>
+    <div class="faq-section">
+      <h2>Perguntas Frequentes sobre Advocacia em Curitiba</h2>
+      <div class="faq-item"><p class="faq-question">1. Como contratar um advogado especialista em Curitiba do seu escritório?</p><div class="faq-answer"><p>É simples. Você pode entrar em contato diretamente pelo nosso WhatsApp (41) 99276-0819 ou preencher o formulário em nosso site. Realizamos atendimentos online para sua comodidade ou presenciais em local a combinar em Curitiba.</p></div></div>
+      <div class="faq-item"><p class="faq-question">2. O atendimento para urgências criminais em Curitiba é 24 horas?</p><div class="faq-answer"><p>Sim. Nossa equipe de advogados criminalistas em Curitiba está de plantão 24 horas por dia, 7 dias por semana, para atender casos urgentes como prisões em flagrante, mandados de busca e apreensão e audiências de custódia.</p></div></div>
+      <div class="faq-item"><p class="faq-question">3. Vocês atuam em casos de direito trabalhista para empresas de Curitiba?</p><div class="faq-answer"><p>Sim. Além de defender os direitos dos trabalhadores, oferecemos uma robusta assessoria jurídica para empresas em Curitiba, focada em compliance, defesa em processos e consultoria para minimizar riscos trabalhistas.</p></div></div>
+      <div class="faq-item"><p class="faq-question">4. Sou profissional da saúde em Curitiba, qual o suporte em Direito Médico?</p><div class="faq-answer"><p>Oferecemos defesa especializada para médicos e outros profissionais da saúde em processos ético-profissionais no CRM e em processos judiciais por erro médico. Também prestamos consultoria sobre publicidade médica e adequação à LGPD para clínicas e consultórios em Curitiba.</p></div></div>
+      <div class="faq-item"><p class="faq-question">5. Onde fica o escritório mais próximo de Curitiba?</p><div class="faq-answer"><p>Nossa base principal está em Pinhais, na Região Metropolitana, o que nos permite ter um acesso logístico privilegiado a toda Curitiba e cidades vizinhas. Atendemos clientes de todos os bairros da capital com a mesma eficiência.</p></div></div>
     </div>
-  </section>
+  </div></div></div></div>
+</div>
+<footer class="wp-singular envato_tk_templates-template envato_tk_templates-template-elementor_header_footer single single-envato_tk_templates postid-37 wp-embed-responsive wp-theme-hello-elementor ehf-header ehf-footer ehf-template-hello-elementor ehf-stylesheet-hello-elementor theme-default elementor-default elementor-template-full-width elementor-kit-6 elementor-page elementor-page-37" id="colophon" itemscope="itemscope" itemtype="https://schema.org/WPFooter" role="contentinfo">
 
-  <!-- ÁREAS EM CURITIBA -->
-  <section class="loc-wrap loc-areas" aria-label="Áreas de atuação em Curitiba">
-    <h2>Áreas mais buscadas em Curitiba</h2>
-    <div class="cards">
-      <article class="card">
-        <h3>Direito Trabalhista</h3>
-        <p>Piso, horas extras, equiparação e acordos. Atendimento a empregados e empresas.</p>
-        <a href="../direito-trabalhista">Abrir página</a>
-      </article>
-      <article class="card">
-        <h3>Direito Criminal</h3>
-        <p>Custódia, delegacia, HC e defesa técnica em crimes específicos.</p>
-        <a href="../direito-criminal">Abrir página</a>
-      </article>
-      <article class="card">
-        <h3>Direito Médico</h3>
-        <p>Defesa do médico, processo ético no CRM, publicidade CFM e LGPD.</p>
-        <a href="../direito-medico">Abrir página</a>
-      </article>
-      <article class="card">
-        <h3>Consultoria Preventiva</h3>
-        <p>Programas práticos de compliance e gestão de risco para empresas.</p>
-        <a href="../consultoria-preventiva">Abrir página</a>
-      </article>
-    </div>
-  </section>
-
-  <!-- RMC -->
-  <section class="loc-wrap loc-rmc" aria-label="Atendimento na Região Metropolitana de Curitiba">
-    <h2>Também atendemos na RMC</h2>
-    <div class="list">
-      <a href="../colombo">Colombo</a>
-      <a href="../campina-grande-do-sul">Campina Grande do Sul</a>
-      <a href="../quatro-barras">Quatro Barras</a>
-      <a href="../rio-branco-do-sul">Rio Branco do Sul</a>
-      <a href="../bocaiuva-do-sul">Bocaiúva do Sul</a>
-      <a href="../itaperucu">Itaperuçu</a>
-      <a href="../almirante-tamandare">Almirante Tamandaré</a>
-      <a href="../pinhais">Pinhais</a>
-      <a href="../piraquara">Piraquara</a>
-      <a href="../sao-jose-dos-pinhais">São José dos Pinhais</a>
-      <a href="../fazenda-rio-grande">Fazenda Rio Grande</a>
-      <a href="../mandirituba">Mandirituba</a>
-      <a href="../contenda">Contenda</a>
-      <a href="../araucaria">Araucária</a>
-      <a href="../campo-largo">Campo Largo</a>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="loc-wrap loc-faq" aria-label="Perguntas frequentes">
-    <h2>FAQ sobre atendimento local</h2>
-    <details><summary>Atendem presencialmente em todos os bairros?</summary><p>Sim. Definimos o melhor ponto de encontro (escritório, coworking ou local seguro próximo a você) e também fazemos atendimento online.</p></details>
-    <details><summary>Posso abrir o atendimento direto pelo WhatsApp?</summary><p>Sim. Clique em “Falar no Whats” e envie uma breve descrição do caso e o bairro. Respondemos com os próximos passos.</p></details>
-    <details><summary>Atendem urgências?</summary><p>Criminal (custódia/delegacia) e casos trabalhistas estratégicos. Informe que é urgência na primeira mensagem.</p></details>
-  </section>
-
-  <!-- CTA -->
-  <section class="loc-wrap loc-cta" aria-label="Chamada para ação">
-    <div>
-      <h3>Vamos conversar sobre o seu bairro?</h3>
-      <p>Diga onde você está (ex.: Batel, Boqueirão, CIC). Indicamos o melhor caminho e a disponibilidade mais rápida.</p>
-    </div>
-    <a class="loc-btn primary" href="https://wa.me/5541992760819" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">Chamar no Whats</a>
-  </section>
-
-  <footer id="colophon" itemscope itemtype="https://schema.org/WPFooter">
-    <div class="footer-width-fixer"> <div class="elementor elementor-33" data-elementor-id="33" data-elementor-type="wp-post">
+<div class="footer-width-fixer"> <div class="elementor elementor-33" data-elementor-id="33" data-elementor-type="wp-post">
 <div class="elementor-element elementor-element-a6a259c e-flex e-con-boxed e-con e-parent" data-element_type="container" data-id="a6a259c" data-settings='{"background_background":"classic"}'>
 <div class="e-con-inner">
 <div class="elementor-element elementor-element-ee00475 e-con-full e-flex e-con e-child" data-element_type="container" data-id="ee00475">
@@ -830,12 +574,12 @@
 <div class="elementor-element elementor-element-404c061 elementor-widget elementor-widget-image" data-element_type="widget" data-id="404c061" data-widget_type="image.default">
 <div class="elementor-widget-container">
 <a href="https://advjonasstephani.com.br/">
-<img alt="Jonas Stephâni Advocacia em Curitiba" class="attachment-large size-large wp-image-109" height="60" src="https://advjonasstephani.com.br/imagens/logo.png" width="250"/> </a>
+<img alt="Jonas Stephâni Advocacia Criminalista em Curitiba" class="attachment-large size-large wp-image-109" height="60" src="https://advjonasstephani.com.br/imagens/logo.png" width="250"/> </a>
 </div>
 </div>
 <div class="elementor-element elementor-element-174eb04 elementor-widget elementor-widget-text-editor" data-element_type="widget" data-id="174eb04" data-widget_type="text-editor.default">
 <div class="elementor-widget-container">
-Defendemos seus direitos com a seriedade e competência que seu caso merece. Advocacia moderna, acessível e focada em resultados.
+Defendemos sua liberdade com a seriedade e competência que seu caso merece. Advocacia criminal moderna, acessível e focada em resultados em Curitiba.
 </div>
 </div>
 </div>
@@ -848,32 +592,32 @@ Defendemos seus direitos com a seriedade e competência que seu caso merece. Adv
 <div class="elementor-widget-container">
 <ul class="elementor-icon-list-items">
 <li class="elementor-icon-list-item">
-<a href="https://advjonasstephani.com.br/">
+<a href="index">
 <span class="elementor-icon-list-text">Início</span>
 </a>
 </li>
 <li class="elementor-icon-list-item">
-<a href="https://advjonasstephani.com.br/sobre-nos">
+<a href="#">
 <span class="elementor-icon-list-text">O Escritório</span>
 </a>
 </li>
 <li class="elementor-icon-list-item">
-<a href="https://advjonasstephani.com.br/areas-de-atuacao">
-<span class="elementor-icon-list-text">Áreas de Atuação</span>
+<a href="direito-criminal">
+<span class="elementor-icon-list-text">Direito Criminal</span>
 </a>
 </li>
 <li class="elementor-icon-list-item">
-<a href="https://advjonasstephani.com.br/blog">
+<a href="#">
 <span class="elementor-icon-list-text">Blog</span>
 </a>
 </li>
 <li class="elementor-icon-list-item">
-<a href="https://advjonasstephani.com.br/perguntas-frequentes">
-<span class="elementor-icon-list-text">FAQ</span>
+<a href="faq">
+<span class="elementor-icon-list-text">Dúvidas</span>
 </a>
 </li>
 <li class="elementor-icon-list-item">
-<a href="#https://advjonasstephani.com.br/contato">
+<a href="#">
 <span class="elementor-icon-list-text">Contato</span>
 </a>
 </li>
@@ -890,28 +634,28 @@ Defendemos seus direitos com a seriedade e competência que seu caso merece. Adv
 <div class="elementor-widget-container">
 <ul class="elementor-icon-list-items">
 <li class="elementor-icon-list-item">
-<a href="https://advjonasstephani.com.br/direito-trabalhista">
-<span class="elementor-icon-list-text">Direito do Trabalho</span>
+<a href="flagrante-delito">
+<span class="elementor-icon-list-text">Flagrante e Audiência de Custódia</span>
 </a>
 </li>
 <li class="elementor-icon-list-item">
-<a href="https://advjonasstephani.com.br/direito-criminal">
-<span class="elementor-icon-list-text">Direito Criminal</span>
+<a href="defesa-processo-criminal">
+<span class="elementor-icon-list-text">Defesa em Processos Criminais</span>
 </a>
 </li>
 <li class="elementor-icon-list-item">
-<a href="https://advjonasstephani.com.br/direito-medico">
-<span class="elementor-icon-list-text">Direito Médico</span>
+<a href="tribunal-do-juri">
+<span class="elementor-icon-list-text">Tribunal do Júri</span>
 </a>
 </li>
 <li class="elementor-icon-list-item">
-<a href="https://advjonasstephani.com.br/consultoria-preventiva">
-<span class="elementor-icon-list-text">Consultoria Preventiva</span>
+<a href="crimes-de-transito">
+<span class="elementor-icon-list-text">Crimes de Trânsito</span>
 </a>
 </li>
 <li class="elementor-icon-list-item">
-<a href="https://advjonasstephani.com.br/piso-salarial">
-<span class="elementor-icon-list-text">Piso Salarial Profissional</span>
+<a href="lei-de-drogas">
+<span class="elementor-icon-list-text">Lei de Drogas</span>
 </a>
 </li>
 </ul>
@@ -928,13 +672,13 @@ Defendemos seus direitos com a seriedade e competência que seu caso merece. Adv
 <div class="elementor-widget-container">
 <ul class="elementor-icon-list-items">
 <li class="elementor-icon-list-item">
-<a href="https://advjonasstephani.com.br/">
+<a href="#">
 <span class="elementor-icon-list-text">Endereço:</span>
 </a>
 </li>
 <li class="elementor-icon-list-item">
-<a href="https://advjonasstephani.com.br/">
-<span class="elementor-icon-list-text">R. Manoel Bandeira, 157 - Vargem Grande, Pinhais - PR</span>
+<a href="#">
+<span class="elementor-icon-list-text">Atendimento em Curitiba - PR</span>
 </a>
 </li>
 <li class="elementor-icon-list-item">
@@ -943,8 +687,8 @@ Defendemos seus direitos com a seriedade e competência que seu caso merece. Adv
 </a>
 </li>
 <li class="elementor-icon-list-item">
-<a href="mailto:contato@advjonasstephani.com.br">
-<span class="elementor-icon-list-text">Email: contato@advjonasstephani.com.br</span>
+<a href="mailto:contato@advogadocriminal.com">
+<span class="elementor-icon-list-text">Email: contato@advogadocriminal.com</span>
 </a>
 </li>
 </ul>
@@ -964,21 +708,21 @@ Defendemos seus direitos com a seriedade e competência que seu caso merece. Adv
 <div class="elementor-widget-container">
 <ul class="elementor-icon-list-items elementor-inline-items">
 <li class="elementor-icon-list-item elementor-inline-item">
-<a href="https://advjonasstephani.com.br/">
+<a href="#">
 <span class="elementor-icon-list-icon">
 <i aria-hidden="true" class="fab fa-whatsapp"></i> </span>
 <span class="elementor-icon-list-text"></span>
 </a>
 </li>
 <li class="elementor-icon-list-item elementor-inline-item">
-<a href="https://advjonasstephani.com.br/">
+<a href="#">
 <span class="elementor-icon-list-icon">
 <i aria-hidden="true" class="fab fa-instagram"></i> </span>
 <span class="elementor-icon-list-text"></span>
 </a>
 </li>
 <li class="elementor-icon-list-item elementor-inline-item">
-<a href="https://advjonasstephani.com.br/">
+<a href="#">
 <span class="elementor-icon-list-icon">
 <i aria-hidden="true" class="icon icon-linkedin"></i> </span>
 <span class="elementor-icon-list-text"></span>
@@ -995,27 +739,10 @@ Defendemos seus direitos com a seriedade e competência que seu caso merece. Adv
 </div>
 </div>
 
-  </footer>
-
-</div>
-
-<!-- JS filtro de bairros -->
-<script>
-  (function(){
-    const input=document.getElementById('locFilter');
-    const grid=document.getElementById('locGrid');
-    if(!input||!grid) return;
-    const tiles=[...grid.querySelectorAll('.loc-tile')];
-    function normalize(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'');}
-    input.addEventListener('input',()=>{
-      const q=normalize(input.value);
-      tiles.forEach(t=>{
-        const name=normalize(t.dataset.name || t.querySelector('h3').textContent);
-        t.style.display = name.includes(q)?'flex':'none';
-      });
-    });
-  })();
-</script>
-
+</footer>
+<script src="../../assets/js/plugins/jquery-3-6-0.min.js"></script>
+<script src="../../assets/js/plugins/bootstrap.min.js"></script>
+<script src="../../assets/js/main.js"></script>
+<script>$(document).ready(function(){$('.faq-question').on('click',function(){$(this).next('.faq-answer').slideToggle();});});</script>
 </body>
 </html>
