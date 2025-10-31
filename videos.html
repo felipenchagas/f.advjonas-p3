@@ -652,50 +652,153 @@
   <!--===== WELCOME ENDS=======-->
 
   <!--===== VIDEOS STARTS=======-->
-  <div class="about3-section-area about-inner">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-12">
-          <div class="about3-textarea">
-            <span>Nossos Vídeos</span>
-            <h2>Conteúdo em Vídeo</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="video-item">
-            <h4>Direito para Diplomados</h4>
-            <video src="assets/diplomados.mp4" controls style="width:100%;"></video>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="video-item">
-            <h4>Direito Médico</h4>
-            <video src="assets/direito-medico.mp4" controls style="width:100%;"></video>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="video-item">
-            <h4>Direito Penal</h4>
-            <video src="assets/direito-penal.mp4" controls style="width:100%;"></video>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="video-item">
-            <h4>Direito Trabalhista para Empresas</h4>
-            <video src="assets/trabalhista-empresa.mp4" controls style="width:100%;"></video>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="video-item">
-            <h4>Direito Trabalhista</h4>
-            <video src="assets/trabalhista.mp4" controls style="width:100%;"></video>
-          </div>
+<div class="about3-section-area about-inner">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-12">
+        <div class="about3-textarea">
+          <span>Nossos Vídeos</span>
+          <h2>Conteúdo em Vídeo</h2>
         </div>
       </div>
     </div>
+
+    <style>
+      .videos-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 35px;
+        justify-items: center;
+        margin-top: 20px;
+      }
+
+      .video-item {
+        position: relative;
+        width: 100%;
+        max-width: 300px;
+        border-radius: 12px;
+        overflow: hidden;
+        background: #000;
+        box-shadow: 0 5px 25px rgba(0,0,0,0.25);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .video-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+      }
+
+      .video-item img {
+        width: 100%;
+        aspect-ratio: 9 / 16;
+        object-fit: cover;
+        display: block;
+        border-radius: 12px;
+      }
+
+      .video-item .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0,0,0,0.55);
+        border-radius: 50%;
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+      }
+
+      .video-item:hover .play-button {
+        background: rgba(255,0,0,0.8);
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+
+      .video-item .play-button svg {
+        width: 25px;
+        height: 25px;
+        fill: #fff;
+      }
+
+      .video-item h4 {
+        text-align: center;
+        margin: 10px 0 0;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #222;
+      }
+
+      @media (max-width: 992px) {
+        .videos-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 600px) {
+        .videos-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+
+    <div class="videos-grid">
+
+      <div class="video-item">
+        <a href="https://youtube.com/shorts/gc8l7es8Np4" target="_blank" aria-label="Assistir Direito para Diplomados no YouTube">
+          <img src="https://img.youtube.com/vi/gc8l7es8Np4/hqdefault.jpg" alt="Direito para Diplomados">
+          <div class="play-button">
+            <svg viewBox="0 0 64 64"><polygon points="25,18 50,32 25,46" /></svg>
+          </div>
+        </a>
+        <h4>Direito para Diplomados</h4>
+      </div>
+
+      <div class="video-item">
+        <a href="https://youtube.com/shorts/BSs4BBFOFC4" target="_blank" aria-label="Assistir Direito Trabalhista para Funcionários no YouTube">
+          <img src="https://img.youtube.com/vi/BSs4BBFOFC4/hqdefault.jpg" alt="Direito Trabalhista para Funcionários">
+          <div class="play-button">
+            <svg viewBox="0 0 64 64"><polygon points="25,18 50,32 25,46" /></svg>
+          </div>
+        </a>
+        <h4>Direito Trabalhista para Funcionários</h4>
+      </div>
+
+      <div class="video-item">
+        <a href="https://youtube.com/shorts/C5nRUBeCamI" target="_blank" aria-label="Assistir Direito Penal no YouTube">
+          <img src="https://img.youtube.com/vi/C5nRUBeCamI/hqdefault.jpg" alt="Direito Penal">
+          <div class="play-button">
+            <svg viewBox="0 0 64 64"><polygon points="25,18 50,32 25,46" /></svg>
+          </div>
+        </a>
+        <h4>Direito Penal</h4>
+      </div>
+
+      <div class="video-item">
+        <a href="https://youtube.com/shorts/XJdy1v4LQCA" target="_blank" aria-label="Assistir Direito Trabalhista para Empresas no YouTube">
+          <img src="https://img.youtube.com/vi/XJdy1v4LQCA/hqdefault.jpg" alt="Direito Trabalhista para Empresas">
+          <div class="play-button">
+            <svg viewBox="0 0 64 64"><polygon points="25,18 50,32 25,46" /></svg>
+          </div>
+        </a>
+        <h4>Direito Trabalhista para Empresas</h4>
+      </div>
+
+      <div class="video-item">
+        <a href="https://youtube.com/shorts/R_qVcG06Nyk" target="_blank" aria-label="Assistir Direito Médico no YouTube">
+          <img src="https://img.youtube.com/vi/R_qVcG06Nyk/hqdefault.jpg" alt="Direito Médico">
+          <div class="play-button">
+            <svg viewBox="0 0 64 64"><polygon points="25,18 50,32 25,46" /></svg>
+          </div>
+        </a>
+        <h4>Direito Médico</h4>
+      </div>
+
+    </div>
   </div>
+</div>
+
   <!--===== VIDEOS ENDS=======-->
 
 <footer class="wp-singular envato_tk_templates-template envato_tk_templates-template-elementor_header_footer single single-envato_tk_templates postid-37 wp-embed-responsive wp-theme-hello-elementor ehf-header ehf-footer ehf-template-hello-elementor ehf-stylesheet-hello-elementor theme-default elementor-default elementor-template-full-width elementor-kit-6 elementor-page elementor-page-37" id="colophon" itemscope="itemscope" itemtype="https://schema.org/WPFooter" role="contentinfo">
